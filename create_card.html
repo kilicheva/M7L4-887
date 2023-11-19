@@ -1,0 +1,24 @@
+<main>
+        {% block content %}
+        <form action="{{ url_for('form_create') }}" method="post" class="creat-form">
+            <div class="form__card">
+                <img class="card__img" src="../static/img/post_icon.png" width="250" height="250" alt="post_icon">
+                <div class="form__inputs">
+                    <label for="title">
+                        <input class="form__input" type="text" name="title" id="title" placeholder="Введите заголовок" required>
+                    </label>
+                    <label for="subtitle">
+                        <input class="form__input" type="text" name="subtitle" id="subtitle" placeholder="Введите подзаголовок" required>
+                    </label>
+                </div>
+                <label for="text">
+                    <textarea class="form__text" name="text" id="text" cols="30" rows="10" required placeholder="Напишите что-нибудь..."></textarea>
+                    <a class="help_button" href="./voice"> Записать </a>
+                </label>
+                <button class="form__button">Создать</button>
+
+            </div>
+        </form>
+
+        {% endblock %}
+      </main>

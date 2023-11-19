@@ -1,0 +1,19 @@
+.help_button {
+    border: 1px solid rgba(14, 165, 233, 1);
+    background: #0F172A;
+    border-radius: 10px;
+    margin: 5%;
+    color: rgba(14, 165, 233, 1);
+    padding: 10px;
+    font: inherit;
+    width: 200px;
+    height: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.help_button:hover {
+    color: #F8FAFC;
+    background:  rgba(14, 165, 233, 1);
+}
